@@ -27,3 +27,5 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 	Route::resource('/gallery', 'Admin\GalleryAdminController');
 	Route::resource('/news', 'Admin\NewsAdminController');
 });
+
+Route::get('/{slug}', 'NewsController@show');

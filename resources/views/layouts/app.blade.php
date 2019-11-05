@@ -66,6 +66,8 @@
     <script src="{{ url('front/js/waypoints.min.js') }}"></script>
     <!-- custom js -->
     <script src="{{ url('front/js/custom.js') }}"></script>
+
+    @yield('script')
 </body>
 
 </html>

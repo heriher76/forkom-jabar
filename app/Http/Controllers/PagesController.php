@@ -32,7 +32,9 @@ class PagesController extends Controller
     {
         $news = News::orderBy('updated_at', 'desc')->where('publish_status', 1)->paginate(5);
 
-    	return view('pages.news', compact('news'));
+        $oldNews = News::orderBy('updated_at', 'asc')->where('publish_status', 1)->limit(5)->get(); 
+
+    	return view('pages.news', compact('news', 'oldNews'));
     }
     public function workProgram()
     {

@@ -31,7 +31,7 @@
                     @foreach($news as $berita)
                     <article class="blog_item">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="img/blog/single_blog_1.png" alt="">
+                            <center><img class="card-img rounded-0" src="{{ url('berita/'.$berita->thumbnail) }}" style="height: 350px; width: auto;" alt=""></center>
                             <a href="#" class="blog_item_date">
                                 <!-- <h3>15</h3> -->
                                 <p>{{ $berita->updated_at->formatLocalized('%A %d %B %Y') }}</p>
@@ -39,13 +39,13 @@
                         </div>
 
                         <div class="blog_details">
-                            <a class="d-inline-block" href="single-blog.html">
+                            <a class="d-inline-block" href="{{ url('/'.$berita->slug) }}">
                                 <h2>{{ $berita->title }}</h2>
                             </a>
                             <p>{!! str_limit(strip_tags($berita->description), $limit = 90, $end = '...') !!}</p>
                             <ul class="blog-info-link">
-                                <li><a href="#"><i class="far fa-user"></i>{{ $berita->user->name }}</a></li>
-                                <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                                <li><i class="far fa-user"></i><a href="#">{{ $berita->user->name }}</a></li>
+                                <li><i class="far fa-comments"></i><a class="disqus-comment-count"  href="{{ url('/'.$berita->slug) }}#disqus_thread"> Komentar</a></li>    
                             </ul>
                         </div>
                     </article>
@@ -61,55 +61,30 @@
                         <form action="#">
                            <div class="form-group">
                               <div class="input-group mb-3">
-                                 <input type="text" class="form-control" placeholder='Search Keyword'
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+                                 <input type="text" class="form-control" placeholder='Cari Berita'
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Cari Berita'">
                                  <div class="input-group-append">
                                     <button class="btn" type="button"><i class="ti-search"></i></button>
                                  </div>
                               </div>
                            </div>
-                           <button class="button rounded-0 primary-bg text-white w-100 btn_1" type="submit">Search</button>
+                           <button class="button rounded-0 primary-bg text-white w-100 btn_1" type="submit">Cari</button>
                         </form>
                      </aside>
                     
                     <aside class="single_sidebar_widget popular_post_widget">
-                        <h3 class="widget_title">Recent Post</h3>
+                        <h3 class="widget_title">Berita Lainnya</h3>
+                        @foreach($oldNews as $itemNews)
                         <div class="media post_item">
-                            <img src="img/post/post_1.png" alt="post">
+                            <img style="width: 10vw;" src="{{ url('berita/'.$itemNews->thumbnail) }}" alt="">
                             <div class="media-body">
-                                <a href="single-blog.html">
-                                    <h3>From life was you fish...</h3>
+                                <a href="{{ url($itemNews->slug) }}">
+                                    <h3>{{ $itemNews->title }}</h3>
                                 </a>
-                                <p>January 12, 2019</p>
+                                <p>{{ $itemNews->updated_at->formatLocalized('%A %d %B %Y') }}</p>
                             </div>
                         </div>
-                        <div class="media post_item">
-                            <img src="img/post/post_2.png" alt="post">
-                            <div class="media-body">
-                                <a href="single-blog.html">
-                                    <h3>The Amazing Hubble</h3>
-                                </a>
-                                <p>02 Hours ago</p>
-                            </div>
-                        </div>
-                        <div class="media post_item">
-                            <img src="img/post/post_3.png" alt="post">
-                            <div class="media-body">
-                                <a href="single-blog.html">
-                                    <h3>Astronomy Or Astrology</h3>
-                                </a>
-                                <p>03 Hours ago</p>
-                            </div>
-                        </div>
-                        <div class="media post_item">
-                            <img src="img/post/post_4.png" alt="post">
-                            <div class="media-body">
-                                <a href="single-blog.html">
-                                    <h3>Asteroids telescope</h3>
-                                </a>
-                                <p>01 Hours ago</p>
-                            </div>
-                        </div>
+                        @endforeach
                     </aside>
 
                 </div>
@@ -117,4 +92,8 @@
         </div>
     </div>
 </section>
+@endsection
+
+@section('script')
+<script id="dsq-count-scr" src="//forkom-puspajabar.disqus.com/count.js" async></script>
 @endsection
