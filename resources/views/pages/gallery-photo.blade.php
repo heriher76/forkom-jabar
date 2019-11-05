@@ -11,8 +11,8 @@
             <div class="col-lg-12">
                 <div class="breadcrumb_iner text-center">
                     <div class="breadcrumb_iner_item">
-                        <h2>Galeri</h2>
-                        <p>Beranda<span>/</span>Galeri</p>
+                        <h2>Galeri Foto</h2>
+                        <p>Beranda<span>/</span>Galeri Foto</p>
                     </div>
                 </div>
             </div>
@@ -28,29 +28,25 @@
             <div class="col-xl-5">
                 <div class="section_tittle text-center">
                     <!-- <p>popular courses</p> -->
-                    <h2>Kumpulan Dokumentasi</h2>
+                    <h2>Foto Dokumentasi</h2>
                 </div>
             </div>
         </div>
         <div class="row">
             @foreach($galleries as $gallery)
-                @if($gallery->type == 'image')
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="single_special_cource">
-                            <img src="{{ url('galeri/'.$gallery->name) }}" class="special_img" alt="">
-                            <div class="special_cource_text">
-                                <a href="course-details.html">
-                                    <h3>Web Development</h3>
-                                </a>
-                                <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
-                                
-                            </div>
-
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_special_cource">
+                        <img src="{{ url('galeri/'.$gallery->name) }}" class="special_img" style="width: auto; min-height: 60vh;" alt="">
+                        <div class="special_cource_text">
+                            <a>
+                                <h3>{{ $gallery->title }}</h3>
+                            </a>
+                            <p>{{ $gallery->desc }}</p>
+                            
                         </div>
+
                     </div>
-                @else
-                <iframe width="640" height="360" src="{{ url('https://www.youtube.com/embed/'.$gallery->name) }}" frameborder="0" allowfullscreen></iframe>
-                @endif
+                </div>
             @endforeach
         </div>
     </div>

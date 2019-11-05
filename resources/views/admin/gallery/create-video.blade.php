@@ -16,9 +16,6 @@
                             <div class="form-line">
                                 <p>Link URL Video</p>
                                 <input type="text" class="form-control" name="name" required="">
-                                <br>
-                                <p>Deskripsi *optional</p>
-                                <textarea name="desc" class="form-control"></textarea>
                             </div>
                         </div>
 						<button type="submit" class="btn btn-primary m-t-15 waves-effect">Tambahkan</button>

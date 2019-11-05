@@ -52,6 +52,7 @@ class GalleryAdminController extends Controller
             
             Gallery::create([
                 'name' => $namaPhoto,
+                'title' => $input['title'],
                 'desc' => $input['desc'],   
                 'type' => 'image'
             ]);
@@ -65,7 +66,6 @@ class GalleryAdminController extends Controller
 
             Gallery::create([
                 'name' => $video_url,
-                'desc' => $input['desc'],
                 'type' => 'video'
             ]);
             Alert::success('Berhasil !', 'Video Sudah Ditambahkan');

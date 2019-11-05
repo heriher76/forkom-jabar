@@ -15,7 +15,8 @@ Auth::routes();
 
 Route::get('/', 'PagesController@home');
 Route::get('/profile', 'PagesController@profile');
-Route::get('/gallery', 'PagesController@gallery');
+Route::get('/gallery-photo', 'PagesController@galleryPhoto');
+Route::get('/gallery-video', 'PagesController@galleryVideo');
 Route::get('/news', 'PagesController@news');
 Route::get('/work-program', 'PagesController@workProgram');
 Route::get('/service', 'PagesController@service');

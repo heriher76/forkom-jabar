@@ -17,6 +17,8 @@
                                 <p>Pilih File</p>
                                 <input type="file" class="form-control" name="name" required="">
                                 <br>
+                                <input type="text" class="form-control" name="title" placeholder="Judul Foto" required="">
+                                <br>
                                 <p>Deskripsi *optional</p>
                                 <textarea name="desc" class="form-control"></textarea>
                             </div>
