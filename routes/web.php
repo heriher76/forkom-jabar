@@ -14,7 +14,8 @@
 Auth::routes();
 
 Route::get('/', 'PagesController@home');
-Route::get('/profile', 'PagesController@profile');
+Route::get('/visi-misi', 'PagesController@visiMisi');
+Route::get('/structure-organization', 'PagesController@structureOrganization');
 Route::get('/gallery-photo', 'PagesController@galleryPhoto');
 Route::get('/gallery-video', 'PagesController@galleryVideo');
 Route::get('/news', 'PagesController@news');
@@ -26,6 +27,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 	Route::resource('/users', 'Admin\UserAdminController');
 	Route::resource('/gallery', 'Admin\GalleryAdminController');
 	Route::resource('/news', 'Admin\NewsAdminController');
+	Route::resource('/visi-misi', 'Admin\VisiMisiController');
+	Route::resource('/structure-organization', 'Admin\StructureOrganizationAdminController');
 });
 
 Route::get('/{slug}', 'NewsController@show');

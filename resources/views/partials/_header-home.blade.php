@@ -16,8 +16,14 @@
                             <li class="nav-item active">
                                 <a class="nav-link" href="{{ url('/') }}">Beranda</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('profile') }}">Profil</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Profil
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ url('/visi-misi') }}">Visi dan Misi</a>
+                                    <a class="dropdown-item" href="{{ url('/structure-organization') }}">Struktur Organisasi</a>
+                                </div>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

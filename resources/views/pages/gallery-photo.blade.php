@@ -36,8 +36,8 @@
             @foreach($galleries as $gallery)
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="{{ url('galeri/'.$gallery->name) }}" class="special_img" style="width: auto; min-height: 60vh;" alt="">
-                        <div class="special_cource_text">
+                        <center><img src="{{ url('galeri/'.$gallery->name) }}" class="special_img" style="width: auto; min-height: 60vh;" alt=""></center>
+                        <div class="special_cource_text" style="padding-top: 0px;">
                             <a>
                                 <h3>{{ $gallery->title }}</h3>
                             </a>
