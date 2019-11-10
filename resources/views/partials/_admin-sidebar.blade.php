@@ -8,6 +8,7 @@
       <!-- Optionally, you can add icons to the links -->
       <li><a href="{{ url('/admin') }}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
       <li class="treeview">
+
         <a href="#"><i class="fa fa-edit"></i> <span>Profil</span>
           <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -19,6 +20,7 @@
         </ul>
       </li>
       <li class="treeview">
+
         <a href="#"><i class="fa fa-file"></i> <span>Berita</span>
           <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>

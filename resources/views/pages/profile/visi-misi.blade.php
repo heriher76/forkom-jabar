@@ -27,6 +27,7 @@
 
     <div class="row">
       <div class="col-12">
+
         <center><h2 class="contact-title">Visi dan Misi Forum Komunikasi Puspa Jawa Barat</h2></center>
       </div>
       <div class="col-md-12">
@@ -35,6 +36,7 @@
         <br>
         <h3>Misi</h3>
         <p>@if($visiMisi != null) {!! $visiMisi->misi !!} @endif</p>
+
       </div>
     </div>
   </div>

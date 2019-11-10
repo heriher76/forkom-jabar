@@ -45,10 +45,13 @@ class PagesController extends Controller
     {
     	return view('pages.service');
     }
+<<<<<<< HEAD
     public function visiMisi() 
     {
         $visiMisi = VisiMisi::first();
 
         return view('pages.profile.visi-misi', compact('visiMisi'));
     }
+=======
+>>>>>>> c33a5f0c0d90fcd4d918b8f21e54369aa7c424eb
 }

@@ -73,6 +73,7 @@ class VisiMisiAdminController extends Controller
      */
     public function update(Request $request, $id)
     {
+<<<<<<< HEAD
         $input = $request->all();
 
         $visiMisi = VisiMisi::first();
@@ -91,6 +92,9 @@ class VisiMisiAdminController extends Controller
         Alert::success('Berhasil !', 'Visi Misi Sudah Diperbaharui'); 
 
         return back();
+=======
+        //
+>>>>>>> c33a5f0c0d90fcd4d918b8f21e54369aa7c424eb
     }
 
     /**
