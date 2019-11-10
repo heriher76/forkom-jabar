@@ -15,6 +15,7 @@ class CreateStructureorganizationTable extends Migration
     {
         Schema::create('structureorganization', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name')->nullable();
             $table->timestamps();
         });
     }
