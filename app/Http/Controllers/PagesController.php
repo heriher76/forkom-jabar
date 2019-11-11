@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\News;
 use App\Gallery;
+use App\VisiMisi;
 
 class PagesController extends Controller
 {
@@ -43,5 +44,11 @@ class PagesController extends Controller
     public function service()
     {
     	return view('pages.service');
+    }
+    public function visiMisi() 
+    {
+        $visiMisi = VisiMisi::first();
+
+        return view('pages.profile.visi-misi', compact('visiMisi'));
     }
 }

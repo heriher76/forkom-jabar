@@ -13,7 +13,7 @@ class CreateStructureorganizationTable extends Migration
      */
     public function up()
     {
-        Schema::create('structureorganization', function (Blueprint $table) {
+        Schema::create('structure_organization', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateStructureorganizationTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('structureorganization');
+        Schema::dropIfExists('structure_organization');
     }
 }

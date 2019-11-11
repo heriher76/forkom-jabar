@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\VisiMisi;
+use Alert;
 
 class VisiMisiAdminController extends Controller
 {
@@ -14,7 +16,9 @@ class VisiMisiAdminController extends Controller
      */
     public function index()
     {
-        //
+        $visiMisi = VisiMisi::first();
+        
+        return view('admin.profile.visi-misi', compact('visiMisi'));
     }
 
     /**
@@ -69,7 +73,28 @@ class VisiMisiAdminController extends Controller
      */
     public function update(Request $request, $id)
     {
+<<<<<<< HEAD
+        $input = $request->all();
+
+        $visiMisi = VisiMisi::first();
+        if($visiMisi != null) {
+            $visiMisi->update([
+                'visi' => $input['visi'],
+                'misi' => $input['misi'],
+            ]);
+        }else{
+            VisiMisi::create([
+                'visi' => $input['visi'],
+                'misi' => $input['misi'],
+            ]);
+        }
+
+        Alert::success('Berhasil !', 'Visi Misi Sudah Diperbaharui'); 
+
+        return back();
+=======
         //
+>>>>>>> c33a5f0c0d90fcd4d918b8f21e54369aa7c424eb
     }
 
     /**

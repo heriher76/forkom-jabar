@@ -8,6 +8,19 @@
       <!-- Optionally, you can add icons to the links -->
       <li><a href="{{ url('/admin') }}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
       <li class="treeview">
+
+        <a href="#"><i class="fa fa-edit"></i> <span>Profil</span>
+          <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="{{ url('/admin/visi-misi') }}">Visi dan Misi</a></li>
+          <li><a href="{{ url('/admin/structure-organization') }}">Struktur Organisasi</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
+
         <a href="#"><i class="fa fa-file"></i> <span>Berita</span>
           <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>

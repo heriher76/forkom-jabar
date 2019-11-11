@@ -27,7 +27,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 	Route::resource('/users', 'Admin\UserAdminController');
 	Route::resource('/gallery', 'Admin\GalleryAdminController');
 	Route::resource('/news', 'Admin\NewsAdminController');
-	Route::resource('/visi-misi', 'Admin\VisiMisiController');
+	Route::resource('/visi-misi', 'Admin\VisiMisiAdminController');
 	Route::resource('/structure-organization', 'Admin\StructureOrganizationAdminController');
 });
 
