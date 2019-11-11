@@ -32,6 +32,18 @@
         </ul>
       </li>
       <li class="treeview">
+
+        <a href="#"><i class="fa fa-cogs"></i> <span>Layanan</span>
+          <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="{{ url('/admin/services') }}">List Layanan</a></li>
+          <li><a href="{{ url('/admin/services/create') }}">Tambah Layanan</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
         <a href="#"><i class="fa fa-photo"></i> <span>Galeri</span>
           <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>

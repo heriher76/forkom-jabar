@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\News;
 use App\Gallery;
 use App\VisiMisi;
+use App\Service;
 
 class PagesController extends Controller
 {
@@ -43,7 +44,9 @@ class PagesController extends Controller
     }
     public function service()
     {
-    	return view('pages.service');
+        $services = Service::all();
+
+    	return view('pages.service', compact('services'));
     }
     public function visiMisi() 
     {

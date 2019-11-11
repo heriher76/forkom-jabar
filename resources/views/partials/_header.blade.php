@@ -41,7 +41,7 @@
                                     <a class="nav-link" href="{{ url('work-program') }}">Program Kerja</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('service') }}">Layanan</a>
+                                    <a class="nav-link" href="{{ url('services') }}">Layanan</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="https://www.google.com" target="_blank">IRAMA</a>
