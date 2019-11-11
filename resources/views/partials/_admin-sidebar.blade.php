@@ -33,6 +33,18 @@
       </li>
       <li class="treeview">
 
+        <a href="#"><i class="fa fa-briefcase"></i> <span>Program Kerja</span>
+          <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="{{ url('/admin/work-program') }}">List Proker</a></li>
+          <li><a href="{{ url('/admin/cooperation') }}">List Kerja Sama</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
+
         <a href="#"><i class="fa fa-cogs"></i> <span>Layanan</span>
           <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
