@@ -15,6 +15,8 @@ class CreateWorkProgramTable extends Migration
     {
         Schema::create('work_program', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name')->nullable();
+            $table->longText('description')->nullable();
             $table->timestamps();
         });
     }
