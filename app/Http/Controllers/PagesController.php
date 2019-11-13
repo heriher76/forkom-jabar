@@ -59,4 +59,8 @@ class PagesController extends Controller
 
         return view('pages.profile.visi-misi', compact('visiMisi'));
     }
+    public function structureOrganization($value='')
+    {
+        return view('pages.profile.structure-organization');
+    }
 }

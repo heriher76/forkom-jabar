@@ -11,7 +11,7 @@
             <div class="col-lg-12">
                 <div class="breadcrumb_iner text-center">
                     <div class="breadcrumb_iner_item">
-                        <h2>Profil</h2>
+                        <h2>Visi Misi</h2>
                         <p>Beranda<span>/<span>Profil</p>
                     </div>
                 </div>
