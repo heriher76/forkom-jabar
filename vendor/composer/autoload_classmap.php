@@ -7,15 +7,18 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\Cooperation' => $baseDir . '/app/Cooperation.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Gallery' => $baseDir . '/app/Gallery.php',
     'App\\Http\\Controllers\\Admin\\AdminPagesController' => $baseDir . '/app/Http/Controllers/Admin/AdminPagesController.php',
+    'App\\Http\\Controllers\\Admin\\CooperationAdminController' => $baseDir . '/app/Http/Controllers/Admin/CooperationAdminController.php',
     'App\\Http\\Controllers\\Admin\\GalleryAdminController' => $baseDir . '/app/Http/Controllers/Admin/GalleryAdminController.php',
     'App\\Http\\Controllers\\Admin\\NewsAdminController' => $baseDir . '/app/Http/Controllers/Admin/NewsAdminController.php',
     'App\\Http\\Controllers\\Admin\\ServiceAdminController' => $baseDir . '/app/Http/Controllers/Admin/ServiceAdminController.php',
     'App\\Http\\Controllers\\Admin\\StructureOrganizationAdminController' => $baseDir . '/app/Http/Controllers/Admin/StructureOrganizationAdminController.php',
     'App\\Http\\Controllers\\Admin\\UserAdminController' => $baseDir . '/app/Http/Controllers/Admin/UserAdminController.php',
     'App\\Http\\Controllers\\Admin\\VisiMisiAdminController' => $baseDir . '/app/Http/Controllers/Admin/VisiMisiAdminController.php',
+    'App\\Http\\Controllers\\Admin\\WorkProgramAdminController' => $baseDir . '/app/Http/Controllers/Admin/WorkProgramAdminController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',

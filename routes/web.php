@@ -30,6 +30,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 	Route::resource('/news', 'Admin\NewsAdminController');
 	Route::resource('/visi-misi', 'Admin\VisiMisiAdminController');
 	Route::resource('/work-program', 'Admin\WorkProgramAdminController');
+	Route::resource('/cooperation', 'Admin\CooperationAdminController');
 	Route::resource('/structure-organization', 'Admin\StructureOrganizationAdminController');
 });
 

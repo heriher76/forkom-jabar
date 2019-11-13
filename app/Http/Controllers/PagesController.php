@@ -7,6 +7,8 @@ use App\News;
 use App\Gallery;
 use App\VisiMisi;
 use App\Service;
+use App\Cooperation;
+use App\WorkProgram;
 
 class PagesController extends Controller
 {
@@ -40,7 +42,10 @@ class PagesController extends Controller
     }
     public function workProgram()
     {
-    	return view('pages.work-program');
+        $cooperations = Cooperation::all();
+        $workPrograms = WorkProgram::all();
+
+    	return view('pages.work-program', compact('cooperations', 'workPrograms'));
     }
     public function service()
     {
