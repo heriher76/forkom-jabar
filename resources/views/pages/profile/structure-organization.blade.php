@@ -34,23 +34,25 @@
           <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
               <thead>
                   <tr>
+                      <th> </th>
                       <th>Nama</th>
-                      <th>Deskripsi</th>
-                      <th>Tanggal MoU</th>
+                      <th>Email</th>
+                      <th>Jabatan</th>
                       <th>Action</th>
                   </tr>
               </thead>
               <tbody>
-                  
+                  @foreach($structures as $structure)
                   <tr>
-                      <td>xxx</td>
-                      <td>zz</td>
-                      <td>sss</td>
+                      <td><img src="{{ url('structureorganization/'.$structure->image) }}" alt="" style="width: 100px;"></td>
+                      <td>{{ $structure->name }}</td>
+                      <td>{{ $structure->email }}</td>
+                      <td>{{ $structure->title }}</td>
                       <td>
-                          <a href="{{ url('admin/cooperation/'.'/edit') }}" class="btn btn-success btn-xs waves-effect">Lihat</a>
+                          <a href="{{ url('structure-organization/'.$structure->id) }}" class="btn btn-success btn-xs waves-effect">Lihat</a>
                       </td>
                   </tr>
-                  
+                  @endforeach
               </tbody>
           </table>
       </div>

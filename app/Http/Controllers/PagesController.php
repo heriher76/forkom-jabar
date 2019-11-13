@@ -9,6 +9,7 @@ use App\VisiMisi;
 use App\Service;
 use App\Cooperation;
 use App\WorkProgram;
+use App\StructureOrganization;
 
 class PagesController extends Controller
 {
@@ -59,8 +60,16 @@ class PagesController extends Controller
 
         return view('pages.profile.visi-misi', compact('visiMisi'));
     }
-    public function structureOrganization($value='')
+    public function structureOrganization()
     {
-        return view('pages.profile.structure-organization');
+        $structures = StructureOrganization::all();
+
+        return view('pages.profile.structure-organization', compact('structures'));
+    }
+    public function showProfile($id) 
+    {
+        $profile = StructureOrganization::where('id', $id)->first();
+
+        return view('pages.profile.show-profile', compact('profile'));
     }
 }

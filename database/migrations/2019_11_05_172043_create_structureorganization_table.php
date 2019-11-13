@@ -16,6 +16,16 @@ class CreateStructureorganizationTable extends Migration
         Schema::create('structure_organization', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
+            $table->string('email')->nullable();
+            $table->string('title')->nullable();
+            $table->string('image')->nullable();
+            $table->string('ttl')->nullable();
+            $table->string('religion')->nullable();
+            $table->longText('schools')->nullable();
+            $table->longText('organizations')->nullable();
+            $table->longText('jobs')->nullable();
+            $table->longText('achievements')->nullable();
+            $table->longText('description')->nullable();
             $table->timestamps();
         });
     }
