@@ -10,12 +10,19 @@ use App\Service;
 use App\Cooperation;
 use App\WorkProgram;
 use App\StructureOrganization;
+use App\Welcome;
+use App\Overview;
 
 class PagesController extends Controller
 {
     public function home()
     {
-    	return view('pages.home');
+        $newsNews = News::orderBy('updated_at', 'desc')->limit(3)->get();
+        $galleries = Gallery::where('type', 'image')->orderBy('updated_at', 'desc')->limit(3)->get();
+        $welcome = Welcome::first();
+        $overview = Overview::first();
+
+    	return view('pages.home', compact('newsNews', 'galleries', 'welcome', 'overview'));
     }
     public function profile()
     {

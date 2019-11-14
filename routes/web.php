@@ -33,6 +33,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 	Route::resource('/work-program', 'Admin\WorkProgramAdminController');
 	Route::resource('/cooperation', 'Admin\CooperationAdminController');
 	Route::resource('/structure-organization', 'Admin\StructureOrganizationAdminController');
+	Route::resource('/welcome', 'Admin\WelcomeAdminController');
+	Route::resource('/overview', 'Admin\OverviewAdminController');
 });
 
 Route::get('/{slug}', 'NewsController@show');

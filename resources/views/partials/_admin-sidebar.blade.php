@@ -68,6 +68,17 @@
         </ul>
       </li>
       <li class="treeview">
+        <a href="#"><i class="fa fa-home"></i> <span>Beranda</span>
+          <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="{{ url('/admin/welcome') }}">Ucapan Selamat Datang</a></li>
+          <li><a href="{{ url('/admin/overview') }}">Selayang Pandang Organisasi</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
         <a href="#"><i class="fa fa-user"></i> <span>Administrator</span>
           <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
