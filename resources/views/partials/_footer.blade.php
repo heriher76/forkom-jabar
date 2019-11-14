@@ -5,36 +5,37 @@
                 <div class="single-footer-widget footer_1">
                     <h4>Tentang</h4>
                     <a href="#"> <!-- <img src="img/logo.png" alt=""> --> </a>
-                    <p>But when shot real her. Chamber her one visite removal six
-                        sending himself boys scot exquisite existend an </p>
-                    <p>But when shot real her hamber her </p>
+                    <p>Visi dan Misi dibentuknya Forum PUSPA sebagai mitra strategis pemerintah dalam memecahkan persoalan perempuan dan anak yang sifatnya koordinasi. </p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 col-xl-4">
                 <div class="single-footer-widget footer_2">
                     <h4>Menu</h4>
-                    <p>Jika Anda tertarik untuk belajar lebih
-                        banyak dan membantu anak Anda
-                        atau diri Anda mencapai tingkat
-                        kehidupan selanjutnya, daftarkan diri
-                        Anda untuk surat kabar kami.
-                    </p>
+                    <ul>
+                        <li><a href="{{ url('/') }}">Beranda</a></li>
+                        <li><a href="{{ url('/visi-misi') }}">Visi dan Misi</a></li>
+                        <li><a href="{{ url('/structure-organization') }}">Struktur Organisasi</a></li>
+                        <li><a href="{{ url('/gallery-photo') }}">Galeri</a></li>
+                        <li><a href="{{ url('/news') }}">Berita</a></li>
+                        <li><a href="{{ url('/work-program') }}">Program Kerja</a></li>
+                        <li><a href="{{ url('/services') }}">Layanan</a></li>
+                    </ul>
                     
-                    <div class="social_icon">
-                        <a href="#"> <i class="ti-facebook"></i> </a>
-                        <a href="#"> <i class="ti-twitter-alt"></i> </a>
-                        <a href="#"> <i class="ti-instagram"></i> </a>
-                        <a href="#"> <i class="ti-youtube"></i> </a>
-                    </div>
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6 col-md-4">
                 <div class="single-footer-widget footer_2">
                     <h4>Hubungi Kami</h4>
                     <div class="contact_info">
-                        <p><span> Address :</span> Hath of it fly signs bear be one blessed after </p>
-                        <p><span> Phone :</span> +2 36 265 (8060)</p>
-                        <p><span> Email : </span>info@colorlib.com </p>
+                        <p><span> Alamat :</span> Bandung, Jawa Barat </p>
+                        <p><span> Telepon :</span> +62 36 265 (8060)</p>
+                        <p><span> Email : </span>humas@forkom-puspajabar.or.id </p>
+                    </div>
+                    <div class="social_icon">
+                        <a href="#"> <i class="ti-facebook"></i> </a>
+                        <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                        <a href="#"> <i class="ti-instagram"></i> </a>
+                        <a href="#"> <i class="ti-youtube"></i> </a>
                     </div>
                 </div>
             </div>

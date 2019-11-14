@@ -11,7 +11,7 @@
             <div class="col-lg-12">
                 <div class="breadcrumb_iner text-center">
                     <div class="breadcrumb_iner_item">
-                        <h2>Berita</h2>
+                        <h2>Hasil Pencarian Berita</h2>
                         <p>Home<span>/</span>Berita</p>
                     </div>
                 </div>

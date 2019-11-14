@@ -44,14 +44,14 @@
                                     <a class="nav-link" href="{{ url('services') }}">Layanan</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://www.google.com" target="_blank">IRAMA</a>
+                                    <b><a class="nav-link" href="https://www.google.com" target="_blank" style="color: grey;">IRAMA</a></b>
                                 </li>
                                 <!-- <li class="d-none d-lg-block">
                                     <a class="btn_1" href="#">Get a Quote</a>
                                 </li> -->
                                 <li style="margin-left: 12vw;" class="d-lg-none d-md-block">
-                                    <form class="input-group mb-3" style="margin-top: 1vw;">
-                                        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                                    <form action="{{ url('/news') }}" method="GET" class="input-group mb-3" style="margin-top: 1vw;">
+                                        <input type="text" class="form-control" name="search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append" style="height: 38px;">
                                             <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search h4 text-body"></i></button>
                                         </div>
@@ -59,8 +59,8 @@
                                 </li>
 
                                 <li class="d-none d-lg-block">
-                                    <form class="input-group mb-3" style="margin-top: 1vw;">
-                                        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                                    <form action="{{ url('/news') }}" method="GET" class="input-group mb-3" style="margin-top: 1vw;">
+                                        <input type="text" name="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append" style="height: 38px;">
                                             <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search h4 text-body"></i></button>
                                         </div>
