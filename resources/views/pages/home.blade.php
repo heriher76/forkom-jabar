@@ -110,14 +110,18 @@
                         <div class="row">
                             <div class="col-lg-6 col-xl-6 col-sm-6 align-self-center">
                                 <div class="testimonial_slider_text">
+                                    @if($welcome != null)
                                     <p>{!! $welcome->description !!}</p>
                                     <h4>{{ $welcome->name }}</h4>
                                     <h5> {{ $welcome->title }}</h5>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-lg-6 col-xl-2 col-sm-6">
                                 <div class="testimonial_slider_img">
+                                    @if($welcome != null)
                                     <img src="{{ url('ucapan/'.$welcome->image) }}" alt="#">
+                                    @endif
                                 </div>
                             </div>        
                         </div>
@@ -142,8 +146,10 @@
                             <div class="learning_member_text_iner">
                                 <br><br><br><br>
                                 <!-- <span class="" style="width: 300px;">Learn Anywhere</span> -->
+                                @if($overview != null)
                                 <h4>{{ $overview->title }}</h4>
                                 <p>{!! $overview->description !!}</p>
+                                @endif
                             </div>
                         </div>
 
