@@ -44,7 +44,7 @@
                                 <a class="nav-link" href="{{ url('services') }}">Layanan</a>
                             </li>
                             <li class="nav-item">
-                                <b><a class="nav-link" href="https://www.google.com" target="_blank" style="color: grey;">IRAMA</a></b>
+                                <b><a class="nav-link" href="https://kids.youtube.com" target="_blank" style="color: grey;">IRAMA</a></b>
                             </li>
                             <!-- <li class="d-none d-lg-block">
                                 <a class="btn_1" href="#">Get a Quote</a>
